@@ -1,0 +1,42 @@
+public class Vehicle {
+    private String engine;
+    private int wheel;
+
+    private int airbags;
+    
+    private Vehicle(VehicleBuilder builder)
+    {
+        this.engine=builder.engine;
+        this.wheel=builder.wheel;
+        this.airbags=builder.airbags;
+    }
+    
+    @Override
+    public String toString()
+    {
+        return "Engine : "+this.engine+" Wheel : "+this.wheel+" Airbag : "+this.airbags;
+    }
+
+    public static class VehicleBuilder
+    {
+        private String engine;
+        private int wheel;
+        
+        private int airbags;
+
+        public VehicleBuilder(String engine,int wheel)
+        {
+            this.engine = engine;
+            this.wheel = wheel;
+        }
+        public VehicleBuilder setAirbags(int airbags)
+        {
+            this.airbags = airbags;
+            return this;
+        }
+        public Vehicle build()
+        {
+            return new Vehicle(this);
+        }
+    }
+}
