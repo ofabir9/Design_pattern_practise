@@ -3,14 +3,14 @@ DSI training design pattern practice with java
 
 Practised so far:
 
-Abstract Factory 
+-> Abstract Factory 
 
-Singleton
+-> Singleton
 
-Prototype
+-> Prototype
 
-Builder
+-> Builder
 
-Observer
+-> Observer
 
-Strategy
+-> Strategy
