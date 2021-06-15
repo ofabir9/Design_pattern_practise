@@ -9,3 +9,8 @@ Singleton
 
 Prototype
 
+Builder
+
+Observer
+
+Strategy
